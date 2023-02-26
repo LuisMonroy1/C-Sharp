@@ -1,0 +1,64 @@
+using System;
+
+namespace Lecture4_4_W13._1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+
+        }
+
+
+        //"public" is the Acces Specifier
+        //"Users" is the Class Name
+            public class Users
+        {
+
+            //These two are the fields
+            public int id = 0;
+            public string name = string.Empty;
+
+            //"Users()" is the constructor
+            public Users()
+            {
+
+                //Constructor Statements
+            }
+
+            //"GetUserDetails" is the Method
+            public void GetUserDetails (int uid, string uname)
+            {
+                id = uid;
+                uname = name;
+                Console.WriteLine("Id: {0}, Name: {1}", id, name);
+
+            }
+
+            //Properties
+            public int Designation { get; set; }
+            public string Location { get; set; }
+            /*
+            These properties are for, you can use
+            while get uname (uname)
+            {
+            get
+            }
+            public setuname(uid, unmae)
+            {
+            id=uid;
+            name=unmae;
+            }
+            */
+
+        }
+
+
+
+
+
+        
+    }
+}
