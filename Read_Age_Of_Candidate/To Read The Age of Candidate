@@ -1,0 +1,30 @@
+using System;
+
+namespace Lecture2_14
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /* Program to read the age of a candidate and determine whether it is 
+             * eligible for casting his/her own vote.
+            */
+            /*
+            int A;
+            
+            Console.WriteLine("Enter Age");
+            A = Convert.ToInt32(Console.ReadLine());
+            
+            if (A >= 18)
+            {
+                Console.WriteLine("You are eligible to vote");
+            }
+            else
+            {
+                Console.WriteLine("You are not eligible to vote");
+            }
+            */
+
+        }
+    }
+}
