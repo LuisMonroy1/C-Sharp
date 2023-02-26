@@ -1,0 +1,50 @@
+using System;
+
+namespace Lecture2_7
+{
+    class Program
+    {
+        private static int sum;
+
+        static void Main(string[] args)
+        {
+            
+
+            /*
+             *Print a number in a reverse order
+            Write a program to check if the given number is a reverse
+            order
+            Eg: 264
+            462
+
+            -Pscudo Code-
+            Console.WriteLine("user to enter the value of n");
+            Create a variable "n" of type integer
+            n=Convert.ToInt32(Console.ReadLine());      <--- This makes what ever value the user enters
+                                                           to now be "n"
+
+            (We use convert.int32 before console.readline because it always thinks it is string first)
+            n1=0;
+            (variable assigned to 0)
+            while (n!=0)
+            {
+            (while n is not equal 0)
+
+            r= 531%10
+            (r is just another variable)
+            (this divides the number into three 5  3  1)
+
+            n1=n1*10+n1;
+
+            n=n/10
+            (531/10=53 on the first pass and then the loop will continue)
+            (it will contunue untill n equals 0)
+            }
+            */
+
+            
+
+
+        }
+    }
+}
