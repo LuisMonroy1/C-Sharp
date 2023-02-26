@@ -1,0 +1,50 @@
+using System;
+
+namespace Lecture2_23
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {                  
+            /*
+             * Write a program to determine whether the year is a leap year or not.
+             * 
+             * Expected Output
+             * Enter the year : 1996
+             * It is a leap year
+             * Enter the year : 2011
+             * It is not a leap year
+             * Enter the year : 1900
+             * It is not a leap year
+             */
+
+            /*
+            int a;
+            
+            Console.WriteLine("Enter the year");
+            a = Convert.ToInt32(Console.ReadLine());
+
+            if ((a % 400) == 0)
+            {
+                Console.WriteLine("{0} is a leap year", a);
+            }
+            else if ((a % 100) == 0)
+            {
+                Console.WriteLine("{0} is not a leap year", a);
+            }
+            else if ((a % 4) == 0)
+            {
+                Console.WriteLine("{0} is a leap year", a);
+            }
+            else
+            {
+                Console.WriteLine("{0} is not a leap year", a);
+            }
+            */
+
+
+           
+
+        }
+    }
+}
