@@ -1,0 +1,52 @@
+using System;
+
+namespace Lecture2_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+            Armstrong number
+            -you split the number into individual numbers, then you (^#) to each and add them
+            and it should equal the original number
+            Ex1. 153 is an Armstrong number bc ((1^3)=1+(5^3)=125+(3^3)=27)=153
+            Ex2. 8208 is an Armstrong number bc ((8^4)=4096+(2^4)=256+(0^4)=0+(8^4)=4096)=8208
+            */
+
+
+            /*
+            //Logic for defining the armstrong number
+            int sum = 0;
+            int temp;
+            int n;
+            Console.WriteLine("enter the vlue of n:");
+            n = Convert.ToInt32(Console.ReadLine());
+            //to convert the n (which is string) into an integer value
+            temp = n;
+            //temp is an extra variable (temporal) to store the original value of n
+
+            while (n > 0)
+            {
+                int n1 = n % 10;
+                //modolous(%) is used in order to separate each number into individual
+                sum = n1 * n1 * n1 + sum;
+                    n = n / 10;
+            }
+            if (temp == sum)
+            {
+                Console.WriteLine("It is an armstrong number {0}", sum);
+            }
+            else
+            {
+                Console.WriteLine("It is not an armstrong number {0}", sum);
+            }
+            */
+
+
+            }
+
+
+        }
+    }
+}
