@@ -1,0 +1,64 @@
+using System;
+
+namespace Lecture2_23
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            /*
+             * Write a program which input three numbers and display the 
+             * largest number using ternary operator.
+             * 
+             * Expected Output
+             * Enter three numbers : 108 98 116
+             * Greatest number is 116
+             */
+            /* USING IF ELSE STATEMENTS
+            int n1;
+            int n2;
+            int n3;
+
+            Console.WriteLine("Enter the number n1");
+            n1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the number n2");
+            n2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the number n3");
+            n3 = Convert.ToInt32(Console.ReadLine());
+
+            if ((n1 > n2) && (n1 > n3))
+            {
+                Console.Write("The greatest number is {0}", n1);
+            }
+            else if ((n2 > n1) && (n2 > n3))
+            {
+                Console.Write("The greatest number is {0}", n2);
+            }
+            else if ((n3 > n1) && (n3 > n2))
+            {
+                Console.Write("The greatest number is {0}", n3);
+            }
+            */
+            /*
+            //USING VARIABLE RESULT
+            int n1;
+            int n2;
+            int n3;
+
+            Console.WriteLine("Enter the number n1");
+            n1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the number n2");
+            n2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the number n3");
+            n3 = Convert.ToInt32(Console.ReadLine());
+
+            var result = ((n1 > n2) && (n1 > n3)) ? n1 : (n2 > n3) ? n2 : n3;
+
+            Console.WriteLine("The greatest number is {0}", result);
+            */
+
+
+        }
+    }
+}
