@@ -1,0 +1,59 @@
+using System;
+
+namespace Lecture3_2_W82
+{
+    public class Program
+    {
+        //User defined functions
+        //
+
+        /*
+         * Program to create user define function with parameters for determining 
+         * a number is a palindrome or not
+        */
+
+        public static int Palindrome(int n)
+        {
+            int r, t1;
+            int sum = 0;
+            
+            t1 = n;
+
+            while (n > 0)
+            {
+                r = n % 10;
+                sum = (sum * 10) + r;
+                n /= 10;
+            }
+
+            if (t1 == sum)
+            {
+                Console.WriteLine("Number is Palindrome");
+                return sum;
+            }
+            else
+            {
+                Console.WriteLine("Number is not a palindrome");
+                return sum;
+            }
+
+        }
+
+
+        public static void Main()
+        {
+
+            int a;
+            Console.WriteLine("Enter a");
+            a = Convert.ToInt32(Console.ReadLine());
+            
+
+            int result = Palindrome(a);
+            Console.WriteLine("{0}", result);
+
+        }
+
+
+
+    }
+}
