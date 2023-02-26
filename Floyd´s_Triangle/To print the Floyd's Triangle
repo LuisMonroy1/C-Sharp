@@ -1,0 +1,71 @@
+using System;
+
+namespace Lecture2_21
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            
+
+                /*
+                 * Program to print the Floyd's Triangle
+                 * 
+                 * Output :
+                1
+                01
+                101
+                0101
+                10101
+                */
+
+                /*
+                int n=10;
+                int p;
+                int q;
+                int i;
+                int j;
+
+                for (i = 1; i <= n; i++)
+                    // i=1, run untill i is not less than or equal to 10, +1 to i every loop
+                {
+                    if (i % 2 == 0)
+                        // if i(1) is divided by 2 and the remainder is 0 then is true
+                    {
+                        p = 1; q = 0;
+                        //if true then set p=1 and q=0
+                    }
+                    else
+                    {
+                        p = 0; q = 1;
+                        // if false then set p=0 and q=1
+                    }
+
+
+                    for (j = 1; j <= i; j++)
+                        // j=1, run untill j is not less than or equal to i, +1 to j every loop
+
+                        if (j % 2 == 0)
+                            // if j(1) is divided by 2 and the remainder is 0 then is true
+                        {
+                            Console.Write("{0}", p);
+                            // if true then write the number "p" - ("1 or 0")
+                        }
+                        else
+                        {
+                            Console.Write("{0}", q);
+                            // if false then write the number "q" - ("1 or 0")
+                        }
+
+                    Console.Write("\n");
+                    n--;
+                    // to go to next line
+                }
+                */
+
+
+            }
+        }
+    }
+
