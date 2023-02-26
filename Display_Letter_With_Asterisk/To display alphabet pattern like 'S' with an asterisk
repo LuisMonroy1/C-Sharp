@@ -1,0 +1,68 @@
+using System;
+
+namespace Lecture2_21
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+                /*
+                 * Program to display alphabet pattern like 'S' with an asterisk
+                 * 
+                 Display the pattern like 'S' with an asterisk:
+                ---------------------------------------------
+                **** 
+               *     
+               *     
+                ***  
+                   *
+                   *
+               ****
+                */
+
+                int row;
+                int column;
+
+                for (row = 0; row <= 6; row++)
+                //row=0, run untill row is not less than or equal to 6, +1 to row every loop
+                {
+                    for (column = 0; column <= 6; column++)
+                    //column=0, run untill column is not less than or equal to 6, +1 to column every loop
+                    {
+                        if (((row == 0 || row == 3 || row == 6) && column > 1 && column < 5) || (column == 1 && (row == 1 || row == 2 || row == 6)) || (column == 5 && (row == 0 || row == 4 || row == 5)))
+                            // if row equals 0 or 3 or 6
+                            //and
+                            // if column equals 1
+                            //and
+                            // if column equals less than 5
+                            /* this defines the space to work on*/
+
+                            // OR
+                            // if column equaks 1
+                            //and
+                            // if row equals 1 or 2 or 6
+                            /*in column 1 put "*" on spaces row 1,2, and 6*/
+
+                            // OR
+                            // if column equals 5
+                            //and
+                            //if row equals 0 or 4 or 5
+                            /*in column 5 put "*" on spaces row 0,4, and 5*/
+
+
+                            Console.Write("*");
+                        // if true then write "*"
+
+                        else
+                            Console.Write(" ");
+                        //if false then write " " (blank space)
+                    }
+                    Console.Write("\n");
+                    // to got to the next line
+                }
+
+
+            }
+        }
+    }
+
