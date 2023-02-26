@@ -1,0 +1,32 @@
+using System;
+
+namespace Lecture2_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+
+
+            //Logic for Fibonacci Sequence
+            int a = 0;
+            int b = 1;
+            int c = 0;
+            int len;
+
+            Console.WriteLine("{0} {1}", a, b);
+            Console.WriteLine("Enter the value of n:");
+            len = Convert.ToInt32(Console.ReadLine());
+            for (int i = 2; i < len; i++) ;
+            {
+                c = a + b;
+                Console.WriteLine("{0}", c);
+                a = b;
+                b = c;
+            }
+
+
+        }
+    }
+}
