@@ -1,0 +1,47 @@
+using System;
+
+namespace Lecture3_2_W82
+{
+    public class Program
+    {
+        //User defined functions
+        //
+
+        /*
+         * Program to calculate factorial of a given number using function.
+         *To solve for a factorial number such as 5!
+         */
+        /*
+        public static int Factorial(int a)
+        {
+            int result = 1;
+            for (int i = 1; i <= a; i++)
+            {
+                result = result * i;
+            }
+
+            return result;
+        }      
+
+
+        public static void Main()
+        {
+
+            int n;
+            Console.WriteLine("Enter the factorial n");
+            n = Convert.ToInt32(Console.ReadLine());
+
+            int result = Factorial(n);
+            Console.WriteLine("The factorial of the number is : {0}", result);
+
+
+        }
+        */
+
+
+
+
+
+        
+    }
+}
