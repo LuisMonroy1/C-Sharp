@@ -1,0 +1,69 @@
+using System;
+using System.IO;
+using static System.Console;
+
+namespace Lecture4_24_W16._1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string filepath = @"/Users/fernandomonroy/Desktop/Online UIW/Spring 2022/Programing Languages/Projects/Lecture4_24_W16.1/EmptyTextFile.txt";
+            WriteLine("Reading the file using the method ReadAllText()");
+
+            
+            //Cheking if the file exist
+            //if exists start reading the file
+            if (File.Exists(filepath))
+            {
+                //Read the content of the file
+                string info = File.ReadAllText(filepath);
+                //To display the text
+                WriteLine(info);
+            }
+
+            string moretext = "This is the new write file!";
+            //New variable moretext
+            File.WriteAllText(filepath, moretext);
+            WriteLine(File.ReadAllText(filepath));
+            
+
+
+
+
+            
+            WriteLine();
+            WriteLine("REading the file using the method of ReadAllLines()");
+            if (File.Exists(filepath))
+            {
+                //Read the content of the file line by line
+                string[] info1 = File.ReadAllLines(filepath);
+                foreach(string line1 in info1)
+                {
+                    WriteLine(line1);
+                }
+                
+            }
+                       
+
+            string[] morecontent = { "This is line 1", "This is Line 2", "This is line 3", "This is Line 4" };
+            File.WriteAllLines(filepath, morecontent);
+            //To display information
+            WriteLine(File.ReadAllText(filepath));
+            
+
+
+
+            string[] info2 = File.ReadAllLines(filepath);
+            foreach (string line2 in info2)
+            {
+                WriteLine(line2);
+            }
+            WriteLine();
+            File.AppendAllText(filepath,moretext);
+
+
+
+        }
+    }
+}
