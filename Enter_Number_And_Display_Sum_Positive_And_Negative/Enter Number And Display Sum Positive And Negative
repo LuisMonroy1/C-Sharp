@@ -1,0 +1,70 @@
+using System;
+
+namespace Lecture2_28
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //FOR MIDTERM 2
+            //Pseduo Code
+            //Comment the code
+
+            /*
+             * Program to enter the numbers till the user wants and at the end it 
+             * should display the count of positive, negative and zeros entered
+             * 
+             * Output :
+             * Enter number 5
+             * Do you want to Continue(y/n)? y
+             * Enter number 6
+             * Do you want to Continue(y/n)? y
+             * Enter number -2
+             * Do you want to Continue(y/n)? y
+             * Enter number 0
+             * Do you want to Continue(y/n)? n
+             * Positive Number :2
+             * Negative Number :1
+             * Zero Number :1
+             */
+
+            int number, positive = 0, negative = 0, zero = 0;
+            char choice;
+
+            do
+            {
+                printf("Enter a number :");
+                scanf("%d", &number);
+
+                if (number > 0)
+                {
+                    positive++;
+                }
+                else if (number < 0)
+                {
+                    negative++;
+                }
+                else
+                {
+                    zero++;
+                }
+
+                printf("Do you want to Continue(y/n)? ");
+                scanf("%c", &choice);
+
+            } while (choice == 'y' || choice == 'Y');
+
+
+            printf("\nPositive Numbers :%d\nNegative Numbers :%d\nZero Numbers :%d",
+                positive, negative, zero);
+
+
+            return 0;
+
+
+
+
+
+        }
+    }
+}
