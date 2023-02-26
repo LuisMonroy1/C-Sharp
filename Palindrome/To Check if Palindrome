@@ -1,0 +1,42 @@
+using System;
+
+namespace Lecture2_7
+{
+    class Program
+    {
+        private static int sum;
+
+        static void Main(string[] args)
+        {                        
+            //Program to check if a number is a palindrome or not
+            //Write a program to check if the given number is a palindrome or not
+            //Eg: 131
+            //131
+
+            //Logic:
+            
+            int n = 167;
+            int r;
+            int sum = 0;
+            int t1;
+
+            t1 = n;
+            while (n > 0)
+            {
+                r = n % 10;
+                sum = (sum * 10) + r;
+                n /= 10;
+            }
+            if (t1 == sum)
+                Console.Write("Number is Palindrome");
+            else
+                Console.Write("Number is not a palindrome");
+
+
+
+            
+
+
+        }
+    }
+}
