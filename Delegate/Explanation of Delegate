@@ -1,0 +1,90 @@
+/*
+************************C# - Delegates***************************
+ delegate is a reference type data type that defines the method signature. 
+ You can define variables of delegate, just like other data type, 
+ that can refer to any method with the same signature as the delegate.
+When working with delegates there 3 steps are involved:
+1. Declare a delegate
+2. Set a target method
+3. Invoke a delegate
+1. Declare a delegate
+  A delegate can be declared using the "delegate" keyword followed by a function 
+signature
+  Syntax : [access modifier] delegate [return type] [delegate name]([parameters])
+  ex: public delegate void MyDelegate(string msg);
+2. Set a target method
+   After declaring a delegate, we need to set the target method or a lambda 
+expression. 
+   We can do it by creating an object of the delegate using the new keyword and 
+passing a method 
+   whose signature matches the delegate signature.
+   ex: // set target method
+       MyDelegate del = new MyDelegate(MethodA);
+       // or 
+       MyDelegate del = MethodA; 
+       // or set lambda expression 
+       MyDelegate del = (string msg) =>  Console.WriteLine(msg);
+       // target method
+       static void MethodA(string message)
+       {
+           Console.WriteLine(message);
+       }
+3. Invoke a delegate
+   After setting a target method, a delegate can be invoked using the Invoke() 
+method or using the () operator.
+   
+   ex: del.Invoke("Hello World!");
+       // or 
+       del("Hello World!");
+*/
+using System;
+   namespace Lecture4_20_W15._1
+   {
+    public class SamplesDelegate
+    {
+        // Declares a delegate for a method that takes in an int and returns a string.
+        public delegate string myMethodDelegate(int myInt);
+        // Defines some methods to which the delegate can point.
+        public class mySampleClass
+        {
+            // Defines an instance method.
+            public string myStringMethod(int myInt)
+            {
+                if (myInt > 0)
+                    return ("positive");
+                if (myInt < 0)
+                    return ("negative");
+                return ("zero");
+            }
+            // Defines a static method.
+            public static string mySignMethod(int myInt)
+            {
+                if (myInt > 0)
+                    return ("+");
+                if (myInt < 0)
+                    return ("-");
+                return ("");
+            }
+        }
+        public static void Main()
+        {
+            // Creates one delegate for each method. For the instance method, an
+            // instance (mySC) must be supplied. For the static method, use the
+            // class name.
+            mySampleClass mySC = new mySampleClass();
+            myMethodDelegate myD1 = new myMethodDelegate(mySC.myStringMethod);
+            myMethodDelegate myD2 = new myMethodDelegate(mySampleClass.mySignMethod);
+            // Invokes the delegates.
+            Console.WriteLine("{0} is {1}; use the sign \"{2}\".", 5, myD1(5), myD2(5));
+            Console.WriteLine("{0} is {1}; use the sign \"{2}\".", -3, myD1(-3), myD2(-3));
+            Console.WriteLine("{0} is {1}; use the sign \"{2}\".", 0, myD1(0), myD2(0));
+        }
+    }
+   }
+    /*
+    This code produces the following output:
+    5 is positive; use the sign "+".
+    -3 is negative; use the sign "-".
+    0 is zero; use the sign "".
+    */
+
