@@ -1,0 +1,47 @@
+using System;
+using static System.Console;
+
+namespace Example4_11_W14._1
+{
+    class PLI
+    //Base Class
+    {
+        public static int week;
+        public static string Assignment;
+    }
+    class Student : PLI
+    //Inherite PLI Class
+    {
+        public static string duedate;
+        public static string powerpoint;
+        static string checkAssignment(int Week)
+        {
+
+
+
+            Week = week;
+            switch (Week)
+            {
+                case 1:
+                    Assignment = "Assignment -1";
+                    WriteLine("The name of the Assignment is: ", Assignment);
+                    duedate = "11/11/22";
+                    WriteLine("Duedate of the Assignment is :", duedate);
+                    break;
+
+                case 2:
+                    Assignment = "Assignment -2";
+                    WriteLine("The name of the Assignment is: ", Assignment);
+                    duedate = "22/11/22";
+                    WriteLine("Duedate of the Assignment is :", duedate);
+                    break;
+                default:
+                    WriteLine("There is no Assignment :");
+                    break;
+
+            }
+            return Assignment;
+        }
+
+    }
+}
