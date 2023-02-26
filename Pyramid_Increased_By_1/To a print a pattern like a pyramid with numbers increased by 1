@@ -1,0 +1,63 @@
+using System;
+
+namespace Lecture2_21
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+                /*
+                 * Program to a print a pattern like a pyramid with numbers increased by 1
+                 *
+                 * Output :
+                 * 
+                         1 
+                       2   3 
+                    4    5   6 
+                 7    8    9   10
+
+                 */
+                /*
+                (1,4)=1 (2,3)=2 (2,5)=3
+                (3,2)=4 (3,4)=5 (3,6)=6
+                (4,1)=7 (4,3)=8 (4,5)=9
+                (4,7)=10
+                */
+
+                /*
+                int clmns = 7;
+                //# of columns
+                int rows = 4;
+                //# of rows
+                int i;
+                int k;
+                int j;
+                int t = 1;
+
+                clmns = rows + 4 - 1;
+                for (i = 1; i <= rows; i++)
+                    //i=1, run untill i is not less than 4(#of rows), +1 to i every loop
+                {
+                    for (k = clmns; k >= 1; k--)
+                        //k=7, run untill 7 is not bigger or equal to 1, -1 to k every loop
+                    {
+                        Console.Write(" ");
+                        //to insert a 4x7 matrix of blank spaces
+                    }
+                    for (j = 1; j <= i; j++)
+                        //j=1, run untill j is not less than or bigger than i, +1 to j every loop
+                    {
+                        Console.Write("{0} ", t++);
+                        // to insert the number
+                    }
+
+                    Console.Write("\n");
+                    clmns--;
+                }
+                */
+
+
+            }
+        }
+    }
+
