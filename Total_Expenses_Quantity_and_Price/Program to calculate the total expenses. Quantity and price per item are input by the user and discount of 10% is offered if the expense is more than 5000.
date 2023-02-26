@@ -1,0 +1,58 @@
+using System;
+
+namespace Lecture2_28
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //FOR MIDTERM 2
+            //Pseduo Code
+            //Comment the code
+
+            /*
+             * Program to calculate the total expenses. Quantity and price per item are 
+             * input by the user and discount of 10% is offered if the expense is more 
+             * than 5000.
+             * 
+             * Output :
+             * Enter quantity: 15
+             * Enter price:$45
+             * Total Expense is $675
+             * Enter quantity:50
+             * Enter price:$300
+             * Total Expense is $13500
+             */
+
+            /*
+            int totalexp;
+            int qty;
+            int price;
+            int discount;
+            
+            Console.WriteLine("Enter the Quantity");
+            qty = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the Price");
+            price = Convert.ToInt32(Console.ReadLine());
+
+            totalexp = qty * price;
+
+            if (totalexp > 5000)
+            {
+                discount = (int)(totalexp * 0.1);
+
+                totalexp = totalexp - discount;
+            }
+
+            Console.WriteLine("The total expense is {0}", totalexp);
+            */
+
+
+
+
+
+
+        }
+    }
+}
