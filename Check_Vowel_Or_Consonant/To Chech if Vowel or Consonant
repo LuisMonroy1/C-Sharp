@@ -1,0 +1,62 @@
+using System;
+
+namespace Lecture2_14
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            /*Program to check a letter is vowel or consonant using switch case
+             * Vowels: a, e, i, o, u
+
+            Output :
+            Enter the letter : a
+            Expected Output :
+            vowel
+
+            Output 1:
+            Enter the letter : b
+            Expected Output :
+            consonant
+            */
+            //Logic:
+            /*
+            int ch = 1;
+            Console.WriteLine("Enter the letter");
+            ch = Convert.ToChar(Console.ReadLine());
+
+            switch (ch)
+            {
+            case 'a': Console.WriteLine("vowel");
+            break;
+            case 'e': Console.WriteLine("vowel");
+            break;
+            case 'i': Console.WriteLine("vowel");
+            break;
+            case 'o': Console.WriteLine("vowel");
+            break;
+            case 'u': Console.WriteLine("vowel");
+            break;
+            case 'A': Console.WriteLine("vowel");
+            break;
+            case 'E': Console.WriteLine("vowel");
+            break;
+            case 'I': Console.WriteLine("vowel");
+            break;
+            case 'O': Console.WriteLine("vowel");
+            break;
+            case 'U': Console.WriteLine("vowel");
+            break;
+            default: Console.WriteLine("consonant");
+            break;
+            }
+            */
+
+
+            
+            
+
+        }
+    }
+}
