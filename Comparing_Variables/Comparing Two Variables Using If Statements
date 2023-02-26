@@ -1,0 +1,75 @@
+using System;
+
+namespace Lecture1_26
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 10;
+
+            String b;
+
+            object c;
+            c = 20;
+
+            //aritmatic operators in c# +,-,*,/,%
+
+
+            //to compare two variables to see which is greater
+            //option1
+            //using logic operators (if else)
+            int x = 5;
+            int y = 10;
+
+            if (x > y)
+            {
+                Console.WriteLine("a is the greatest number");
+
+            }
+            else
+            {
+                Console.WriteLine("b is the greatest number");
+            }
+            //option2
+            //using conditional operators
+
+            // condition ? firstexpression : secondexpression
+            //this is the syntax to follow
+            int z;
+            z = x > y ? x : y;
+            Console.WriteLine(z);
+            //if the conditon is true(x>y) then the value of x is gonna show in z
+            //if the condition is false(x>y) then the value of y is gonna show in z
+            //(":") represents ("else")
+
+            /*
+            //Example how to get 12
+            a & b = 12
+
+            128 64 32 16 8 4 2 1
+            0    0  0  0 0 0 0 0
+            //0000 0000 this eight ceros is the format
+            0    0  0  0 1 1 0 0 = 12
+            //0000 1100 this symbolizes that 8 and 4 are "1" so wehn you add 8 and 4 you get 12
+
+            0110 0100 = 100
+            //to get 100 we need "1" on the 64, 32, and 4
+            0010 0000 = 32
+            // to get 32
+
+
+            //TRUTH TABLES FOR
+                //AND, OR, XOR, NAND,
+
+                //TRUTH TABLE FOR AND
+                A B  A & B
+                0 0  0
+                0 1  0
+                1 0  0
+                1 1  1
+             /*
+
+        }
+    }
+}
