@@ -1,0 +1,41 @@
+using System;
+
+namespace Lecture2_16
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            /*
+             * Program to find the number of times a substring appears in the given string
+             * 
+             * Input the original string : hello how are you Input the string to be 
+             * searched for : hello The string 'hello' occurs 1 times.
+             */
+
+            string str;
+            string findstring;
+            int start = 0;
+            int cnt = -1;
+            int index = -1;
+
+            Console.Write("Input the original string : ");
+            str = Console.ReadLine();
+            Console.Write("Input the string to be searched for : ");
+            findstring = Console.ReadLine();
+
+            while (start != -1)
+            {
+                start = str.IndexOf(findstring, index + 1);
+                cnt += 1;
+                index = start;
+            }
+            Console.Write("The string '{0}' occurs " + cnt + " times.\n", findstring);
+
+
+
+
+        }
+    }
+}
