@@ -1,0 +1,36 @@
+using System;
+
+namespace Lecture2_23
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            /*
+             * Write a program to swap value of two variables without using third variable.
+             * 
+             * Expected Output
+             * Enter two numbers : 78 12
+             * After swapping numbers are : 12 78
+             */
+            /*
+            int x;
+            int y;
+            
+            Console.WriteLine("Enter the number for x");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the number for y");
+            y = Convert.ToInt32(Console.ReadLine());
+            
+            x = x + y;
+            y = x - y;     
+            x = x - y;
+
+            Console.WriteLine("After swap x is:" + x);
+            Console.WriteLine("After swap y is:" + y);
+            */
+
+        }
+    }
+}
