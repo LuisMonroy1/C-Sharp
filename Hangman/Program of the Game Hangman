@@ -1,0 +1,220 @@
+using System;
+
+namespace HangMan3_28_W12._1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        
+            {
+            //Console.WriteLine("Welcome to play the Hangman!");
+            // This is how you call the metod:
+            //Hangmangame();
+
+            //Add(2.5f, 2.5f);
+            //Add(3, 3, 3);
+            //Uname(lname: "lname", fname: "fname");
+            Console.WriteLine("a: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("b: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("c: ");
+            int c = Convert.ToInt32(Console.ReadLine());
+            if (a >=0 && a <=0)
+            {
+
+            }
+
+            calculator(a, b);
+            calculator(a, b, c);
+        }
+
+
+        // if you create another method in this case "public static string "name()" you can organize the code, and call it somewhere else
+        public static string Hangmangame()
+        {
+
+            //Array
+            string[] listofwords = new string[5];
+            //You can also create the Array and variables like this :
+            //string[] listofwords = new string[5] {"Lion", "Tiger", "Goat", "Dog", "Cat" };
+
+            //To add the list of words
+            listofwords[0] = "Lion";
+            listofwords[1] = "Tiger";
+            listofwords[2] = "Goat";
+            listofwords[3] = "Dog";
+            listofwords[4] = "Cat";
+
+            Random random = new Random();
+            var id = random.Next(0, 4);
+            //Choose a random numner from the Array
+
+            string hangmanword = listofwords[id];
+
+            char[] systemguess = new char[hangmanword.Length];
+            // New charcter Array to store the guesses of the player
+
+            Console.WriteLine("Please enter your guess: ");
+
+            //for loop stat starts with i=0 runs untill i is no longer less than the lenth of hangmanword, and increments i by 1
+            for (int i = 0; i < hangmanword.Length; i++)
+            {
+                systemguess[i] = '_';
+                // display the player guess along with a '_' for the rest of the unguessed letters
+
+            }
+
+            // while the for loop is running 
+            while (true)
+            {
+                char playerguess = Convert.ToChar(Console.ReadLine());
+                //
+
+                //for loop stat starts with j=0 runs untill j is no longer less than the lenth of hangmanword, and increments j by 1
+                for (int j = 0; j < hangmanword.Length; j++)
+                {
+                    //if statement, when the letter from the player is the same as the one from the hangmanword
+                    //then make the systemguess slot in the new Array equal that letter
+                    if (playerguess == hangmanword[j])
+                    {
+                        systemguess[j] = playerguess;
+
+                    }
+                }
+                Console.WriteLine(systemguess);
+                //To display the system guess (which is the letters guessed and the '_' for the rest)
+            }
+
+
+        }
+
+
+        public static void calculator(int a, int b, int c)
+        {
+            Add(a, b, c);
+            Min(a, b, c);
+            Mult(a, b, c);
+            Div(a, b, c);
+        }
+        public static void calculator(int a, int b)
+        {
+            Add(a, b);
+            Min(a, b);
+            Mult(a, b);
+            Div(a, b);
+        }
+
+        #region Int
+        public static int Add(int a, int b)
+        {
+            Console.WriteLine("Answer for Add: {0}", a + b);
+            return a + b;
+        }
+        public static int Add(int a, int b, int c)
+        {
+            Console.WriteLine("Answer for Add: {0}", a + b + c);
+            return a + b + c;
+
+        }
+        public static int Min(int a, int b)
+        {
+            Console.WriteLine("Answer for Min: {0}", a - b);
+            return a - b;
+
+        }
+        public static int Min(int a, int b, int c)
+        {
+            Console.WriteLine("Answer for Min: {0}", a - b - c);
+            return a - b - c;
+
+        }
+        public static int Mult(int a, int b)
+        {
+            Console.WriteLine("Answer for Mult: {0}", a * b);
+            return a * b;
+
+        }
+        public static int Mult(int a, int b, int c)
+        {
+            Console.WriteLine("Answer for Mult: {0}", a * b * c);
+            return a * b * c;
+
+        }
+        public static int Div(int a, int b)
+        {
+            Console.WriteLine("Answer for Div: {0}", a / b);
+
+            return a / b;
+
+        }
+
+        public static int Div(int a, int b, int c)
+        {
+            Console.WriteLine("Answer for Div: {0}", a / b / c);
+            return a / b / c;
+
+        }
+        #endregion
+
+        #region Float
+        public static float Add(float a, float b)
+        //Uses float values (such as 2.5f)
+        {
+            return a + b;
+
+        }
+        public static float Add(float a, float b, float c)
+        //Uses float values (such as 2.5f)
+        {
+            return a + b + c;
+
+        }
+        public static float Min(float a, float b)
+        {
+            return a - b;
+
+        }
+        public static float Min(float a, float b, float c)
+        {
+            return a - b - c;
+
+        }
+        public static float Mult(float a, float b)
+        {
+            return a * b;
+
+        }
+        public static float Mult(float a, float b, float c)
+        {
+            return a * b * c;
+
+        }
+        public static float Div(float a, float b)
+        {
+            return a / b;
+
+        }
+        public static float Div(float a, float b, float c)
+        {
+            return a / b / c;
+
+        }
+        #endregion
+
+        #region string
+        public static string Uname(string fname, string lname)
+        //Uses strinf values (such as "text")
+        {
+            return fname + lname;
+
+        }
+
+        #endregion
+
+
+
+
+
+    }
+}
