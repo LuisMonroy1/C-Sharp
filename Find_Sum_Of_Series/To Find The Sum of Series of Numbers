@@ -1,0 +1,44 @@
+using System;
+
+namespace Lecture2_14
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            /*
+             * Program to find the sum of the series 1 +11 + 111 + 1111 + .. n terms. 
+        Output:
+            Input the number of terms: 5
+                Expected Output :
+                1 + 11 + 111 + 1111 + 11111 +
+                The Sum is : 12345
+
+            the first number is 1, for the second multiply by 10 and +1 to get 11,
+            to get 111 do 1*100+10+1*1, to get 1111 do 1*1000+100*1+10*1 and so on
+            */
+            //Logic
+            /*
+            int n;
+            Console.WriteLine("Enter the value of n");
+            n = Convert.ToInt32(Console.ReadLine());
+            int i;
+            int sum=0;
+            int t=1;
+            for(i=1;i<=n;i++)
+            {
+            Console.Write("{0} + ",t);
+            sum=sum+t;
+            t=(t*10)+1;
+            }
+            Console.WriteLine("\n Sum is {0}", sum);
+            */
+
+
+            
+            
+
+        }
+    }
+}
