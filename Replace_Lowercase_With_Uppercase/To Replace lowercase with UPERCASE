@@ -1,0 +1,50 @@
+using System;
+
+namespace Lecture2_16
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            
+            /*
+             * Program to read a sentence and replace lowercase characters by 
+             * uppercase and vice-versa
+             *
+             *Output :
+             *Enter the Sentence : hello how are you!
+             *After conversion,  the sentence is : HELLO HOW ARE YOU!
+            */
+            /*
+            string str1;
+            char[] arr1;
+            int length, i;
+            char ch;
+
+            length = 0;
+
+            Console.Write("Input the string : ");
+            str1 = Console.ReadLine();
+
+            length = str1.Length;
+            arr1 = str1.ToCharArray(0, length); // Converts string into char array.
+            Console.WriteLine("\nAfter conversion, the string is: ");
+            for (i = 0; i < length; i++)
+            {
+                ch = arr1[i];
+                if (Char.IsLower(ch)) // check whether the character is lowercase
+                    Console.WriteLine(Char.ToUpper(ch)); // Converts lowercase character to uppercase.
+                else
+                    Console.WriteLine(Char.ToLower(ch)); // Converts uppercase character to lowercase.
+            }
+            */
+
+            
+
+
+
+
+        }
+    }
+}
