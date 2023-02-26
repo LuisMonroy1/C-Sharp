@@ -1,0 +1,33 @@
+using System;
+
+namespace Lecture2_7
+{
+    class Program
+    {
+        private static int sum;
+
+        static void Main(string[] args)
+        {
+            
+
+            /*
+             *Write a program to check if the given number is a prime number or not
+            //2, 3, 5, 7, 11, 13, 17, 19, 23.... Are prime numbers
+
+            //Logic:
+                m = n / 2;
+                for (i = 2; i <= m; i++)
+                {
+                    if (n % i == 0)
+                    {
+                        Console.Write("Number is not Prime.");
+                        flag = 1;
+                        break;
+                    }
+                }
+            
+
+
+        }
+    }
+}
