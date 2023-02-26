@@ -1,0 +1,30 @@
+using System;
+
+namespace Lecture2_7
+{
+    class Program
+    {
+        private static int sum;
+
+        static void Main(string[] args)
+        {
+            
+
+            /*
+            //Program to print factorial of a given number
+            //Write a program to print the factorial of given number
+                //5! = 5 * 4 * 3 * 2 * 1 = 120
+                //6! = 6 * 5 * 4 * 3 * 2 * 1 = 720
+
+
+            Logic:
+            for (i = 1; i <= number; i++)
+            {
+                fact = fact * i;
+            }
+            */
+
+
+        }
+    }
+}
