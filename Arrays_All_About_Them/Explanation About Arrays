@@ -1,0 +1,119 @@
+using System;
+
+namespace Lecture_3._16_W10._1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            /*
+            We can have a 1-dimensional array:
+            int [] A;
+            // As yet, A has no size.
+            A = new int[5];
+            // Now A has a size (which cannot be changed).
+
+            or we can combine these:
+            int [] B = new int[4];
+            We can initialize the array when it is declared:
+            int [] C = new int[3] { 1, 2, 3 };
+
+            or even shorter:
+            int [] D = { 4, 5, 6, 7 };
+            // D has size 4.
+
+            We can have a multi-dimensional array:
+            int [ , ] F = new int[2, 3]; int [ , ,] G = new int [2, 3, 4];
+            Here one comma indicates 2-dimensional and two commas indicate 3-dimensional.
+
+            We can refer to array elements:
+            A[3] or E[1, 2].
+            */
+
+
+
+
+            /*
+            //Example1: Array D has size 4.
+            //Use for loop to display all of the numbers of Array D
+            int[] D = { 4, 5, 6, 7 };
+
+            int i;
+
+            for (i = 0; i < 4; i++)
+            {
+                Console.WriteLine("Array D: " + D[i]);
+            }
+            */
+
+
+
+            /*
+            //Example2: How to access each elements of an Array
+            int[] numbers = { 1, 2, 3 };
+            // create an array
+
+            Console.WriteLine("Element in first index : " + numbers[0]);
+                //access first element
+
+            Console.WriteLine("Element in second index : " + numbers[1]);
+                //access second element
+
+            Console.WriteLine("Element in third index : " + numbers[2]);
+                //access third element
+
+            Console.ReadLine();
+            */
+
+
+
+            /*
+            //Example3: To change the value of one element in an Array
+            int[] numbers = { 1, 2, 3 };
+            // create an array
+
+            Console.WriteLine("Old Value at index 0: " + numbers[0]);
+            
+            numbers[0] = 11;
+            // change the value at index 0
+            
+            Console.WriteLine("New Value at index 0: " + numbers[0]);
+            //print new value
+            Console.ReadLine();
+            */
+
+
+
+            /*
+            //Example4: Use for loop to display all of the numbers of Array
+            int[] numbers = { 1, 2, 3 };
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                Console.WriteLine("Element in index " + i + ": " + numbers[i]);
+            }
+            Console.ReadLine();
+            */
+
+
+
+            
+            //Example5: Use foreach loop to display all of the numbers of Array as a list
+            int[] numbers = { 1, 2, 3 };
+            Console.WriteLine("Array Elements: ");
+
+
+            foreach (int num in numbers)
+            {
+                Console.WriteLine(num);
+            }
+            Console.ReadLine();
+            
+
+
+
+
+        }
+    }
+}
