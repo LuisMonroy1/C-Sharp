@@ -1,0 +1,54 @@
+using System;
+
+class Solution
+{
+    class Shape
+    //Base Class Shape
+
+    {
+        protected double width, height;
+
+        public void setWidth(double width)
+        //Data member Width
+
+        {
+            this.width = width;
+        }
+
+        public void setHeight(double height)
+        //Data member Length
+
+        {
+            this.height = height;
+        }
+    }
+
+    interface paintCost
+    //Data member Cost
+
+    {
+        double getCost();
+    }
+
+    class Rectangle : Shape, paintCost
+    {
+        public double getArea()
+        {
+            return width * height;
+        }
+
+        public double getCost()
+        {
+            return 70 * getArea();
+        }
+    }
+
+    static public void Main(string[] args)
+    {
+        Rectangle rectangle = new Rectangle();
+        rectangle.setWidth(7);
+        rectangle.setHeight(5);
+        Console.WriteLine("Total area: " + rectangle.getArea());
+        Console.WriteLine("Total paint cost: " + rectangle.getCost());
+    }
+}
