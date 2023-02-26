@@ -1,0 +1,167 @@
+using System;
+
+namespace Lecture1_31
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //From last class
+            //Conditional operatiors (if else)
+            //Relational operators (<,>,==)
+            //Automatic operators (+,-,/,*,%)
+            //Bitwise operators (&&, ,xor(^),<<,>>)
+            //Logical operators ()
+            //Assignment operators (=, +=, -=, /=, *=, %=)
+
+            //(% is called modulous)
+
+            /*
+            Syntax for if statements:
+            if(condition) 
+            { 
+            //code to be executed } 
+            */
+
+            /*
+            Syntax for if else statements:
+            if (condition)
+            {
+                // code if condition is true 
+            }
+            else
+            {
+                // code if condition is false 
+            }
+            */
+
+            /*
+            Syntax: Nested - if statement
+            if (condition)
+            {
+                // code if condition is true
+                if (condition)
+                {
+                    // code if condition is true 
+                }
+            }
+            else
+            {
+                // code if condition is false }
+            */
+
+            /*
+            Syntax: If – else – if ladder Statement
+            if(condition1) { 
+            // code to be executed if 
+            condition1 is true 
+            } 
+            else if(condition2) { 
+            // code to be executed if 
+            condition2 is true 
+            } 
+            else if(condition3) { 
+            // code to be executed if 
+            condition3 is true 
+            } 
+            ... 
+            else { 
+            // code to be executed if all 
+            the conditions are false 
+            }
+            */
+
+            /*
+            Syntax: Switch Statement
+            switch (expression) 
+            { 
+            case value1: // statement sequence       
+                         break; 
+            case value2: // statement sequence 
+                         break; 
+            . . . 
+            case valueN: // statement sequence 
+                         break; 
+            default: // default statement sequence 
+            }
+            */
+
+            //Loops:  for, while, do-while, nested
+            /*
+            Syntax: While Loop
+            while (boolean condition) 
+            { 
+            loop statements... 
+            }
+
+            Ex.
+            value=0;
+            while(value <= 0)
+
+            value++
+            (value++=value+1)
+
+            Console.writeline("false")
+            (when value becomes 11 then the console will print "false")
+            */
+            /*
+            Syntax:for loop
+            for (loop variable initialization ; testing condition; 
+            increment / decrement) 
+            { 
+            // statements to be executed 
+            }
+            
+            Ex. (for loop)
+            for(int i=0; i<=0; i++)
+            (loop variable initialization; testing condition; increment / decrement)
+
+            Console.writeline("print i value")
+            */
+
+            /*
+            Syntax:do-while loop (ALSO WORKS FOR NESTED LOOPS)
+            do { 
+            statements.. 
+            }while (condition);
+            */
+
+            /*
+            Continue statement:
+            continue statement is used to skip over the execution part 
+            of loop on a certain condition and move the flow to next
+
+            Break statement
+            The break statement is used to terminate the loop or 
+            statement in which it present
+
+            Goto statement
+            This statement is used to transfer control to the labeled 
+            statement in the program.
+
+            Return statement
+            This statement terminates the execution of the method and 
+            returns the control to the calling method.
+            */
+
+
+            /*
+            int n = 10;
+            int a = 0;
+            int b = 1;
+            while (n <= 10) ;
+
+            m+fibnum = a + b;
+            Console.WriteLine("fibnum:{0}");
+            Seq = fibnum + b;
+            (while loop)*/
+            /*
+            for (int n = 0; n <= 10; n++) ;
+            (for loop)*/
+
+
+
+
+        }
+    }
+}
