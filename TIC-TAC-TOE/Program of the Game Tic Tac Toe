@@ -1,0 +1,192 @@
+using System;
+
+namespace TicTacToe_3._21
+{
+    class Program
+    {
+
+        #region variables
+        static char[] ch = { '0', '1', '2', '3', '4', '5', '6', '7', '8' };
+        //Array of type character
+        static int player = 1;
+        //variable for player (player 1 plays first automatically)
+        static int choice;
+        //variable for choice (character X or O)
+        static int flag;
+        //variable to store the "checkwinstatus", to determine if the player has won or lost
+        #endregion
+
+        static void Main(string[] args)
+        {
+
+            do
+            {
+                #region To tell the console which player's turn is to play
+                Console.WriteLine("Player 1: X and Player 2: O");
+                Console.WriteLine("\n");
+                Board();
+                                
+                if (player % 2 == 0)
+                //If statement to tell the console which player's turn is to play
+                {
+                    Console.WriteLine("Now is time for player 2 to play!");
+                }
+                else
+                {
+                    Console.WriteLine("Now is time for player 1 to play!");
+                }
+                Console.WriteLine("\n");
+
+
+                choice = Convert.ToInt32(Console.ReadLine());
+                //To get information from the User and store it on "choice"
+                #endregion
+
+
+                #region To check if the space that the player entered is occupied or not
+                if (ch[choice] != 'X' && ch[choice] != 'O')
+                //If statement to check if the space that the player entered is occupied or not
+                {
+                    if (player % 2 == 0)
+                    //If player 2 is playing
+                    {
+                        ch[choice] = 'O';
+                        player++;
+                        //If player 2 choice is O or X
+                    }
+                    else
+                    {
+                        ch[choice] = 'X';
+                        player++;
+                        //If player 2 choice is O or X
+
+                    }
+                }
+                else
+                // else statement in case the user selects a space that is alredy occupied
+                {
+                    Console.WriteLine("The Location is already filled, try another location", choice, ch[choice]);
+                    Console.WriteLine("\n");
+                }
+
+                flag = Checkwinstatus();
+                //To determine if the player has won or lost
+                #endregion
+                                
+            }
+
+            #region To display if player has won
+            while (flag != 1 && flag != -1);
+            //while loop to display if player has won (1=win, -1=lose)
+            Board();
+            // to draw the board again (just call the funtion)
+            if (flag == 1)
+            {
+                Console.WriteLine("Player {0} has won", (player % 2) + 1);
+            }
+            else
+            {
+                Console.WriteLine("The game is a draw");
+            }
+            #endregion
+
+        }
+
+
+        #region Defiying the Board
+        //Board method that is used to create the board
+
+        private static void Board()
+        {
+
+            Console.WriteLine("   |   |   ");
+            Console.WriteLine(" {0} | {1} | {2} ", ch[0], ch[1], ch[2]);
+            Console.WriteLine("___|___|___");
+            Console.WriteLine("   |   |   ");
+            Console.WriteLine(" {0} | {1} | {2} ", ch[3], ch[4], ch[5]);
+            Console.WriteLine("___|___|___");
+            Console.WriteLine("   |   |   ");
+            Console.WriteLine(" {0} | {1} | {2} ", ch[6], ch[7], ch[8]);
+            Console.WriteLine("   |   |   ");
+
+
+
+
+        }
+
+        #endregion
+
+
+
+        #region Cheking the player winning status
+
+        private static int Checkwinstatus()
+        {
+            #region Horizontal winning conditios
+            if (ch[0] == ch[1] && ch[1] == ch[2])
+            {
+                return 1;
+            }
+            else if (ch[3] == ch[4] && ch[4] == ch[5])
+            {
+                return 1;
+            }
+            else if (ch[6] == ch[7] && ch[7] == ch[8])
+            {
+                return 1;
+            }
+
+            #endregion
+
+            #region Vertical winning conditios
+            if (ch[0] == ch[3] && ch[3] == ch[6])
+            {
+                return 1;
+            }
+            else if (ch[1] == ch[4] && ch[4] == ch[7])
+            {
+                return 1;
+            }
+            else if (ch[2] == ch[5] && ch[5] == ch[8])
+            {
+                return 1;
+            }
+
+            #endregion
+
+            #region Diagonal winning conditios
+            if (ch[0] == ch[4] && ch[4] == ch[8])
+            {
+                return 1;
+            }
+            else if (ch[2] == ch[4] && ch[4] == ch[6])
+            {
+                return 1;
+            }
+
+            #endregion
+
+            #region Cheching for Draw
+            else if (ch[0] != '0' && ch[1] != '1' && ch[2] != '2' && ch[3] != '3' && ch[4] != '4' && ch[5] != '5' && ch[6] != '6' && ch[7] != '7' && ch[8] != '8')
+            {
+                return -1;
+            }
+
+            #endregion
+
+            #region 
+            else
+            {
+                return 0;
+            }
+
+            #endregion
+
+
+        }
+        #endregion
+
+
+
+    }
+}
