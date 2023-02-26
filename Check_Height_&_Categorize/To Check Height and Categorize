@@ -1,0 +1,41 @@
+using System;
+
+namespace Lecture2_14
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            /*
+             * Program to accept the height of a person in centimeter and categorize 
+             * the person according to their height.
+            */
+            
+            int B;
+
+            Console.WriteLine("Enter Height in cm");
+            B = Convert.ToInt32(Console.ReadLine());
+
+            if (B < 150.0)
+            {
+                Console.Write("The person is Dwarf");
+            }
+
+            else if ((B >= 150.0) && (B <= 165.0))
+            {
+                Console.Write("The personis average heighted");
+            }
+            else if ((B >= 165.0) && (B <= 195.0))
+            {
+                Console.Write("The person is tall");
+            }
+            else
+            {
+                Console.Write("Abnormal height");
+            }
+            
+
+        }
+    }
+}
