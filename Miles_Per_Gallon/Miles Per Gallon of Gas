@@ -1,0 +1,43 @@
+using System;
+using static System.Console;
+//TO NOT HAVE TO WRITE CONSOLE ON EACH COMMAND
+
+namespace Lecture4_11_W14._1
+{
+    class MilesPerGallon
+    {
+        static void Main()
+        {
+            int milesDriven;
+            int gallonsOfGas;
+            int mpg;
+            // Intigers
+
+            try
+            {
+                Write("Enter Miles Driven: ");
+                milesDriven = Convert.ToInt32(ReadLine());
+                Write("Enter Gallons of Gas: ");
+                gallonsOfGas = Convert.ToInt32(ReadLine());
+                //To get values of Miles and Gallons of Gas
+
+                mpg = milesDriven / gallonsOfGas;
+            }
+
+            catch (Exception)
+            //Exception
+            {
+
+                mpg = 0;
+                Write("You attempted to divide by zero!", mpg);
+                //Exception if user divides by 0 ("0 Gallons of Gas"
+
+            }
+            Write("You have got {0} Miles per Gallon", mpg);
+            //Display how many miles per gallon the user has
+
+        }
+
+    }
+
+}
