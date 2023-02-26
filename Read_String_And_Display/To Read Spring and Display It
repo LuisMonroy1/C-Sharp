@@ -1,0 +1,31 @@
+using System;
+
+namespace Lecture2_16
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+           
+
+            /*
+             *Program to read a string from the keyboard and print it
+            */
+            /*
+            String str;
+
+            Console.WriteLine("enter the string: ");
+            str = Console.ReadLine();
+
+            Console.WriteLine("The string you entered is : {0}\n", str);
+            Console.ReadLine();
+            */
+
+
+            
+
+
+        }
+    }
+}
